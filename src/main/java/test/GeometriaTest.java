@@ -74,6 +74,18 @@ class GeometriaTest {
 		assertEquals(esperado, resultado);
 	}
 	
+	@Test
+	public void testConstructor() {
+		Geometria c = new Geometria(1);
+		int resultado = c.getId();
+		String resultado2 = c.getNom();
+		String esperado2 = "cuadrado";
+		int esperado = 1;
+		assertEquals(esperado, resultado);
+		assertEquals(esperado2, resultado2);
+
+	}
+	
 	
 
 }
